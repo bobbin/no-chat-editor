@@ -56,7 +56,8 @@ class App extends Component {
     this.state = {
       messages: [],
       isToggle: {},
-      activeCharacter: {}
+      activeCharacter: {},
+      characterCollection: []
     };
     this.onSend = this.onSend.bind(this);
     this.handleClick = this.handleClick.bind(this);
@@ -132,7 +133,23 @@ class App extends Component {
       activeCharacter: { name: character }
     });
   }
+  addCharacter() {
+    const characterName = prompt('Please enter your name');
+    
+    this.setState(state => {
+      state.characterCollection.push(characterName)
+      return state.characterCollection;
+    }) 
+  }
   render() {
+    const characters = this.state.characterCollection.map((characterName) => (
+      <div key={this.uuidv4()}>
+        <button key={this.uuidv4()} onClick={() => this.handleClick(characterName)}>
+          {characterName}{" "}
+        </button>
+      </div>
+    ));
+
     return (
       <div className="App" style={styles.container}>
         <div style={styles.chat}>
@@ -145,6 +162,7 @@ class App extends Component {
             <div>
               <button onClick={() => this.addCharacter()}>+ </button>
             </div>
+            {characters}
             <div>
               <button onClick={() => this.handleClick("Horacio")}>
                 Horacio{" "}
