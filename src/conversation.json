@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "text": "Nos encontramos en la explanada delante del Palacio Real de Elsingor, en una noche oscura y fría.",
+    "createdAt": "00-01-2020",
+    "system": "true"
+  },
+  {
+    "id": 2,
+    "text": "¿Quién está ahí?",
+    "createdAt": "01-01-2020",
+    "user": {
+      "_id": 1,
+      "name": "Bernardo",
+      "avatar": "https://i.pravatar.cc/150?u=bernardo"
+    }
+  },
+  {
+    "id": 3,
+    "text": "No, respóndame él a mí. Deténgase y diga quién es.",
+    "createdAt": "02-01-2020",
+    "user": {
+      "_id": 2,
+      "name": "Francisco",
+      "avatar": "https://i.pravatar.cc/150?u=francisco"
+    }
+  },
+  {
+    "id": 4,
+    "text": "¡Viva el Rey!",
+    "createdAt": "03-01-2020",
+    "user": {
+      "_id": 1,
+      "name": "Bernardo",
+      "avatar": "https://i.pravatar.cc/150?u=bernardo"
+    }
+  },
+  {
+    "id": 5,
+    "text": "¿Es Bernardo?",
+    "createdAt": "04-01-2020",
+    "user": {
+      "_id": 2,
+      "name": "Francisco",
+      "avatar": "https://i.pravatar.cc/150?u=francisco"
+    }
+  },
+  {
+    "id": 6,
+    "text": "Muy bien. Buenas noches. Si encuentras a Horacio y Marcelo, mis compañeros de guardia, diles que vengan presto.",
+    "createdAt": "05-01-2020",
+    "user": {
+      "_id": 1,
+      "name": "Bernardo",
+      "avatar": "https://i.pravatar.cc/150?u=bernardo"
+    }
+  },
+  {
+    "id": 7,
+    "text": "Me parece que los oigo. Alto ahí. ¡Eh! ¿Quién va?",
+    "createdAt": "06-01-2020",
+    "user": {
+      "_id": 2,
+      "name": "Francisco",
+      "avatar": "https://i.pravatar.cc/150?u=francisco"
+    }
+  }
+]
